@@ -2,4 +2,5 @@
 layout: home
 ---
 
-[About Me](./docs/About_me.html)  
+[About me](./docs/About_me.html)  
+[建立Blog](./docs/Build_The_Blog.html)
