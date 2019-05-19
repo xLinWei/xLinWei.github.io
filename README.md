@@ -3,8 +3,7 @@
 <div align=center><img src=assets/img/web1.jpg width=60%></div>
 <div align=center><img src=assets/img/web2.jpg width=60%></div>
 
-This is an simple jekyll theme, you can quickly build your own page web. This Jekyll Theme refer to [Github Pages Themes:Minimal](https://github.com/pages-themes/minimal).  
-If you like this theme, you can **Fork & Star**.
+This is an simple jekyll theme, you can quickly build your own page web. This Jekyll Theme refer to [Github Pages Themes:Minimal](https://github.com/pages-themes/minimal). If you like this theme, you can **Fork & Star**.
 
 ## Installation
 To get this theme, follow those simple steps:
