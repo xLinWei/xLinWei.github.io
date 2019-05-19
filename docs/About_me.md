@@ -2,7 +2,7 @@
 layout: post
 ---
 
-# About Me
+# About me
 by WeiLin, 2019.5.19
 
 在读研究生一枚~
