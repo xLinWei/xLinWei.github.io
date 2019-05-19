@@ -2,4 +2,4 @@
 layout: home
 ---
 
-[About me](./docs/About_me.html)  
+[About Me](./docs/About_me.html)  

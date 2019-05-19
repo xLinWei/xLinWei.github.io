@@ -3,8 +3,9 @@ layout: post
 ---
 
 # About Me
-by WeiLin,2019,5,19
-学生一枚，在读研究生~
+by WeiLin, 2019.5.19
+
+在读研究生一枚~
 
 Blog刚建不久，会陆续把平时的笔记放到这里~  
 
