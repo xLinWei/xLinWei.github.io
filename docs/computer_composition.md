@@ -1,6 +1,6 @@
 ---
 layout: post
-tags: computer composition
+tags: computer
 ---
 
 # 计算机组成
