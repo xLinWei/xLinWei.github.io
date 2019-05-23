@@ -4,6 +4,7 @@ tags: computer
 ---
 
 # Nand2Tetris
+by WeiLin, 2019.5.20  
 
 Nand2Tetris(从与非门到俄罗斯方块)是一个基于项目的课程，其全称为“依据基本原理构建现代计算机：从与非门到俄罗斯方块”。该课程从一个与非门(Nand)开始，根据设计好的指令系统，构建一个完整的计算机(_HACK Computer_)，并编写汇编器及编译器，最终实现Tetris游戏。
 
