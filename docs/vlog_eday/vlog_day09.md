@@ -17,7 +17,7 @@ assign odd=!even;
 
 ### 二、CRC校验
 CRC(循环冗余校验)结构跟LFSR一样，就是通过反馈移位寄存器实现的，所不同的是CRC有数据输入端：
-<center><img src="crc.png" width="60%"></center>
+<center><img src="image/day09/crc.png" width="60%"></center>
 
 所以其代码跟LFSR相似：
 ```verilog

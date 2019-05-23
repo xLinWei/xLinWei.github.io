@@ -18,44 +18,44 @@ vlog_eday大部分例子是按照下面参考书来进行的。vlog_eday并没�
 
 ### Content
 
-[day1:进制与编码](./day01/vlog_day01.html)
+[day1:进制与编码](./vlog_day01.html)
 ：进制简介/BCD编码
 
-[day2:组合逻辑](./day02/vlog_day02.html)
+[day2:组合逻辑](./vlog_day02.html)
 ：基本逻辑/组合逻辑
 
-[day3:边沿检测](./day03/vlog_day03.html)
+[day3:边沿检测](./vlog_day03.html)
 ：同步边沿检测/异步边沿检测
 
-[day4:加法器](./day04/vlog_day04.html)
+[day4:加法器](./vlog_day04.html)
 ：半加器/全加器/行波进位加法器/溢出检测
 
-[day5:计数器](./day05/vlog_day05.html)
+[day5:计数器](./vlog_day05.html)
 ：二进制计数器/环形计数器/约翰逊计数器/格雷码计数器
 
-[day6:按键去抖动](./day06/vlog_day06.html)
+[day6:按键去抖动](./vlog_day06.html)
 ：按键去抖动
 
-[day7:格雷码](./day07/vlog_day07.html)
+[day7:格雷码](./vlog_day07.html)
 ：Bin2Gray/Gray2bin
 
-[day8:LFSR](./day08/vlog_day08.html)
+[day8:LFSR](./vlog_day08.html)
 ：斐波那契LFSR/伽罗瓦LFSR/LFSR计数器
 
-[day9:校验码](./day09/vlog_day09.html)
+[day9:校验码](./vlog_day09.html)
 ：奇偶校验/CRC校验
 
-[day10:译码和编码](./day10/vlog_day10.html)
+[day10:译码和编码](./vlog_day10.html)
 ：7段译码器/常规编码器/优先编码器
 
-[day11:时钟分频](./day11/vlog_day11.html)
+[day11:时钟分频](./vlog_day11.html)
 ：偶数分频/奇数分频
 
-[day12:复位](./day12/vlog_day12.html)
+[day12:复位](./vlog_day12.html)
 ：同步复位/异步复位/异步复位同步释放
 
-[day13:锁存器](./day13/vlog_day13.html)
+[day13:锁存器](./vlog_day13.html)
 ：避免锁存器的代码书写规范
 
-[day14:BCD加法器](./day14/vlog_day14.html)
+[day14:BCD加法器](./vlog_day14.html)
 ：BCD加法器/`a[base-:width]`结构的使用

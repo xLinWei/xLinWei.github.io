@@ -26,7 +26,7 @@ endmodule
 ```
 ### 2.环形计数器
 环形计数器就是将1循环移位，对于n bit，有n个计数，规律如下所示(代码中是4bit)：
-<center><img src="ring.png" width="60%"></center>
+<center><img src="image/day05/ring.png" width="60%"></center>
 
 ```verilog
 //环形计数器
@@ -46,7 +46,7 @@ endmodule
 ```
 ### 3.约翰逊计数器
 Johnson计数器又叫扭环计数器,对于n bit，有2n个计数，规律如下所示(代码中是4bit)：                       
-<center><img src="Tring.png" width="60%"></center>
+<center><img src="image/day05/Tring.png" width="60%"></center>
 
 ```verilog
 //Johnson计数器
@@ -69,7 +69,7 @@ endmodule
 ```
 ### 4.格雷码计数器
 Gray码后面会详细讲解，其特点就是相邻编码间只有1bit不同，代码如下(代码中是4bit)：
-<center><img src="gray0.png" width="60%"></center>
+<center><img src="image/day05/gray0.png" width="60%"></center>
 
 ```verilog
 //Gray计数器
@@ -94,4 +94,4 @@ endmodule
 线性反馈计数器，能够产生伪随机序列,序列个数跟线性反馈移位寄存器的设计有关，不一定是2^n-1。后面会详细介绍。
 
 仿真波形如下：
-<center><img src="result.png" width="80%"></center>
+<center><img src="image/day05/result.png" width="80%"></center>

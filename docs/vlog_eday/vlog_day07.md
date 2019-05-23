@@ -6,7 +6,7 @@ tags: verilog
 ## vlog_day7:Gray码
 by [WeiLin](https://github.com/xLinWei)
 
-<center><img src="gray0.png" width="40%"></center>
+<center><img src="image/day07/gray0.png" width="40%"></center>
 相邻编码间只有1bit不同，除最高位外镜像对称。在异步FIFO里Gray码有重要的作用，后面会详细介绍异步FIFO。可以通过右移异或得到Gray码：
 
 ```verilog
@@ -15,10 +15,10 @@ gray->bin: assign bin = {gray[n-1],bin[n-1:1]^gray[n-2:0]};
 ```
 结构图如下所示(以4bit为例)，Gray的详细介绍参考[这里](https://www.eetimes.com/document.asp?doc_id=1274549).
 
-<center><img src="gray.png" width="60%"></center>
+<center><img src="image/day07/gray.png" width="60%"></center>
 
 下面为具体代码及仿真波形：
-<center><img src="result.png"></center>
+<center><img src="image/day07/result.png"></center>
 
 ```verilog
 //bin2gray.v//
