@@ -22,38 +22,38 @@ FSM有3种写法：一段式、两段式、三段式，下面以101序列检测�
 ```verilog
 //101序列检测器:一段式
 module seq101(
-	input clk,rst,in,
-	output reg out
+    input clk,rst,in,
+    output reg out
 );
-	localparam S0=2'b00,S1=2'b01,S2=2'b10,S3=2'b11;
+    localparam S0=2'b00,S1=2'b01,S2=2'b10,S3=2'b11;
 
-	reg [1:0] state;
-	always@(posedge clk or posedge rst)begin
-		if(rst)begin
-			out<=0;
-			state<=S0;
-		end
-		else begin
-			case(state)
-				S0:begin
-					state<=in?S1:S0;
-					out<=0;
-				end
-				S1:begin
-					state<=in?S1:S2;
-					out<=0;
-				end
-				S2:begin
-					state<=in?S3:S0;
-					out<=0;
-				end
-				S3:begin
-					state<=in?S1:S2;
-					out<=1;
-				end
-			endcase
-		end
-	end
+    reg [1:0] state;
+    always@(posedge clk or posedge rst)begin
+        if(rst)begin
+            out<=0;
+            state<=S0;
+        end
+        else begin
+            case(state)
+                S0:begin
+                    state<=in?S1:S0;
+                    out<=0;
+                end
+                S1:begin
+                    state<=in?S1:S2;
+                    out<=0;
+                end
+                S2:begin
+                    state<=in?S3:S0;
+                    out<=0;
+                end
+                S3:begin
+                    state<=in?S1:S2;
+                    out<=1;
+                end
+            endcase
+        end
+    end
 
 endmodule
 ```
@@ -61,39 +61,39 @@ endmodule
 ```verilog
 //101序列检测器：两段式
 module seq101_2(
-	input clk,rst,in,
-	output reg out
+    input clk,rst,in,
+    output reg out
 );
-	localparam S0=2'b00,S1=2'b01,S2=2'b10,S3=2'b11;
+    localparam S0=2'b00,S1=2'b01,S2=2'b10,S3=2'b11;
 
-	reg [1:0] state,next_state;
+    reg [1:0] state,next_state;
     always@(posedge clk or posedge rst)begin
-        if(rst)
-            state<=S0;
-        else
-            state<=next_state;
+    if(rst)
+        state<=S0;
+    else
+        state<=next_state;
     end
 
-	always@(*)begin
+    always@(*)begin
         case(state)
-			S0:begin
-				next_state<=in?S1:S0;
-				out<=0;
-			end
-			S1:begin
-				next_state<=in?S1:S2;
-				out<=0;
-			end
-			S2:begin
-				next_state<=in?S3:S0;
-				out<=0;
-			end
-			S3:begin
-				next_state<=in?S1:S2;
-				out<=1;
-			end
-		endcase
-	end
+            S0:begin
+                next_state<=in?S1:S0;
+                out<=0;
+            end
+        S1:begin
+            next_state<=in?S1:S2;
+                out<=0;
+            end
+            S2:begin
+                next_state<=in?S3:S0;
+                out<=0;
+            end
+            S3:begin
+            next_state<=in?S1:S2;
+                out<=1;
+            end
+        endcase
+    end
 
 endmodule
 ```
@@ -101,42 +101,42 @@ endmodule
 ```verilog
 //101序列检测器：三段式
 module seq101_3(
-	input clk,rst,in,
-	output reg out
+    input clk,rst,in,
+    output reg out
 );
-	localparam S0=2'b00,S1=2'b01,S2=2'b10,S3=2'b11;
+    localparam S0=2'b00,S1=2'b01,S2=2'b10,S3=2'b11;
 
-	reg [1:0] state,next_state;
+    reg [1:0] state,next_state;
     always@(*)begin
         case(state)
-			S0:next_state<=in?S1:S0;
-			S1:next_state<=in?S1:S2;
-			S2:next_state<=in?S3:S0;
-			S3:next_state<=in?S1:S2;
-			default:next_state<=S0;
-		endcase
-	end
+            S0:next_state<=in?S1:S0;
+            S1:next_state<=in?S1:S2;
+            S2:next_state<=in?S3:S0;
+            S3:next_state<=in?S1:S2;
+            default:next_state<=S0;
+        endcase
+    end
 
     always@(posedge clk or posedge rst)begin
         if(rst)
             state<=S0;
         else
             state<=next_state;
-    end
+        end
 
-	always@(posedge clk or posedge rst)begin
+    always@(posedge clk or posedge rst)begin
         if(rst)
             out<=0;
         else begin
             case(state)
-			S0:out<=0;
-			S1:out<=0;
-			S2:out<=0;
-			S3:out<=1;
-			default:out<=0;
-		endcase
+                S0:out<=0;
+                S1:out<=0;
+                S2:out<=0;
+                S3:out<=1;
+                default:out<=0;
+            endcase
         end
-	end
+    end
 
 endmodule
 ```
