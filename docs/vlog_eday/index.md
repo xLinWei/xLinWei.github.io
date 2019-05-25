@@ -62,3 +62,6 @@ vlog_eday大部分例子是按照下面参考书来进行的。vlog_eday并没�
 
 [day15:Mux选择器](./vlog_day15.html)
 ：向量索引in[sel]实现选择器/bit切片确定固定宽度
+
+[day16:有限状态机](./vlog_day16.html)
+：状态机分类/状态机的3种写法
