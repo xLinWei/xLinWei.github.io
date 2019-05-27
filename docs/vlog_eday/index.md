@@ -68,3 +68,6 @@ vlog_eday大部分例子是按照下面参考书来进行的。vlog_eday并没�
 
 [day17:亚稳态](./vlog_day17.html)
 ：亚稳态是什么/为什么需要建立保持时间
+
+[day18:同步FIFO](./vlog_day18.html)
+：同步FIFO的代码
