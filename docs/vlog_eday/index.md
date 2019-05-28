@@ -10,7 +10,7 @@ by WeiLin, 2019.5.23
 
 vlog_eday是一个技术群里提出的想法，就是每天由群主布置作业，成员按时完成作业并提交，如果连续三天未提交作业，就会被退群。虽然这个“课堂”只维持了2个星期，但也是学到了很多东西，这里很感谢[“不忘出芯”](https://github.com/ic7x24)及[“陈锋”](http://exasic.com/)。
 
-vlog_eday大部分例子是按照下面参考书来进行的。vlog_eday并没有对详细原理进行介绍，侧重于代码，所以关于理论部分请参考参考书。我将自己写的code和testbench放在了[这里](https://github.com/xLinWei/vlog_eday)。代码中大部分都经过 _Modelsim_ 仿真测试过，如果有任何错误，请指正。
+vlog_eday大部分例子是按照下面参考书来进行的。vlog_eday并没有对详细原理进行介绍，大多是自己的总结，更侧重于代码，所以关于详细的理论请参考参考书。我将自己写的code和testbench放在了[这里](https://github.com/xLinWei/vlog_eday)。代码中大部分都经过 _Modelsim_ 仿真测试过，如果有任何错误，请指正。
 
 ### Reference book
 [1] William J.Dally,R.Curtis Harting.数字设计系统方法[M].  
@@ -71,3 +71,9 @@ vlog_eday大部分例子是按照下面参考书来进行的。vlog_eday并没�
 
 [day18:同步FIFO](./vlog_day18.html)
 ：同步FIFO的代码
+
+[day19:同步技术](./vlog_day19.html)
+：两级触发器/脉冲同步器
+
+[day20:异步FIFO](./vlog_day20.html)
+：异步FIFO代码

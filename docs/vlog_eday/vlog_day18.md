@@ -66,6 +66,8 @@ always@(posedge clk or negedge rst_n)begin
             data_out<=RAM[rd_addr];
             rd_addr<=rd_addr+1;
         end
+        else
+            rd_addr<=rd_addr+1;
     end
 end
 
