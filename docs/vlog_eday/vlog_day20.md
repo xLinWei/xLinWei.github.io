@@ -6,9 +6,9 @@ tags: verilog
 ## vlog_day20:异步FIFO
 by [WeiLin](https://github.com/xLinWei)
 
-推荐2个讲解异步FIFO不错的博客：  
-https://zhuanlan.zhihu.com/p/42991844  
-https://ninghechuan.com/2018/12/15/Verilog%E8%AE%BE%E8%AE%A1%E5%BC%82%E6%AD%A5FIFO/  
+推荐2个讲解异步FIFO不错的博客：
+[地址1](https://zhuanlan.zhihu.com/p/42991844),
+[地址2](https://ninghechuan.com/2018/12/15/Verilog%E8%AE%BE%E8%AE%A1%E5%BC%82%E6%AD%A5FIFO/)
 
 **1.关于写满读空怎么判断**：当什么都不写时rd_ptr==wr_ptr，当写满时rd_ptr也等于wr_ptr，所以有两个解决办法：  
 - 将地址扩展1位，表示读写指针是否在同一轮，所以在判断空满时如果rd_ptr==wr_ptr则为空，如果最高位不等其余位相等则为满(这里是用二进制表示指针计数)。而在格雷码下判断满状态时除了最高位不等次高位也要不等。  
@@ -19,7 +19,7 @@ https://ninghechuan.com/2018/12/15/Verilog%E8%AE%BE%E8%AE%A1%E5%BC%82%E6%AD%A5FI
 **3.二进制码转换成二进制格雷码**：其法则是保留二进制码的最高位作为格雷码的最高位，而次高位格雷码为二进制码的高位与次高位相异或，而格雷码其余各位与次高位的求法相类似。这样就可以实现二进制到格雷码的转换了，总结就是移位并且异或，verilog代码实现就一句：
 assign graydata = (bindata >> 1) ^ bindata;
 
-4.FIFO深度：通过读写频率，突发速率，突发长度进而确定FIFO的最小深度。要理解“背靠背“突发。https://ninghechuan.com/2019/01/20/%E4%BD%A0%E9%97%AE%E6%88%91FIFO%E6%9C%89%E5%A4%9A%E6%B7%B1/
+4.FIFO深度：通过读写频率，突发速率，突发长度进而确定FIFO的最小深度。要理解“背靠背“突发。可以参看这篇[博客](https://ninghechuan.com/2019/01/20/%E4%BD%A0%E9%97%AE%E6%88%91FIFO%E6%9C%89%E5%A4%9A%E6%B7%B1/).
 
 ```verilog
 //异步FIFO
