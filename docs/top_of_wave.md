@@ -1,6 +1,6 @@
 ---
 layout: post
-tags: blog
+tags: book
 ---
 
 # 浪潮之间
