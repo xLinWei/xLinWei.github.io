@@ -1,5 +1,6 @@
 ---
 layout: post
+tags: blog
 ---
 
 # 浪潮之间
