@@ -8,3 +8,4 @@ layout: home
 [> 与非门到俄罗斯方块](./docs/Nand2Tetris.html)  
 [> vlog_eday](./docs/vlog_eday/index.html)  
 [> 浪潮之间](./docs/top_of_wave.html)  
+[> 关于RISC-V](./docs/about_riscv.html)  
