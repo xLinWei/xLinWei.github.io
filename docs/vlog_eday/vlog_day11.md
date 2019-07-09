@@ -53,7 +53,7 @@ module clk_even #(parameter N=4)(
 
 endmodule
 ```
-<center><img src="image/day11/result1.png" "width="80%"></center>
+<center><img src="image/day11/result1.png" width="80%"></center>
 
 ### 2.奇数分频
 奇数分频需要在上升沿和下降沿分别计数，然后"错位相或"或者"错位异或"即可，所以可以分成以下两个方法(以5分频为例)：
