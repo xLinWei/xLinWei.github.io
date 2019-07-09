@@ -42,6 +42,6 @@ out=!x <=> MUX(1,0,x,out)
 ```
 而异或`z=xy'+x'y`可以表示如下,然后据此就可以构建全加器了。
 
-<center><img src="image/day02/xor.png" width="40%"></center>
+<center><img src="image/02_xor.png" width="40%"></center>
 
 从上面的Exercise可以看出，MUX能够实现“与门、或门、非门、异或”等逻辑门。一般在 _ECO(Engineering Change Order,工程设计变更)_ 阶段需要使用替补元件或额外的元件对电路进行修正，这时使用MUX就很方便。

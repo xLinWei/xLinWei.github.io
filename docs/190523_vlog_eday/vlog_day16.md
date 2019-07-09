@@ -7,7 +7,7 @@ tags: verilog
 by [WeiLin](https://github.com/xLinWei)
 
 FSM有限状态机分为Moore(摩尔型)和Mealy(米里型)两类：**(1)Moore** :输出只取决于当前状态，与输入没有关系；**(2)Mealy** :输出既取决于当前状态，又取决于输入；
-<center><img src="image/day16/fsm0.png"></center>
+<center><img src="image/16_fsm0.png"></center>
 
 状态机如上图所示，可以分为3个部分:  
 **(1)状态转移组合逻辑** : 由当前状态(state)计算下一状态(next_state);  
@@ -15,7 +15,7 @@ FSM有限状态机分为Moore(摩尔型)和Mealy(米里型)两类：**(1)Moore**
 **(3)输出组合逻辑**：由(输入)和当前状态计算输出；
 
 FSM有3种写法：一段式、两段式、三段式，下面以101序列检测器为例来展示不同的写法。首先画出101序列检测器的泡泡图：
-<center><img src="image/day16/fsm.png"></center>
+<center><img src="image/16_fsm.png"></center>
 
 一段式是将状态转移逻辑、输出逻辑和状态更新包含在一个always时序块里。对于简单的状态机，一段式便于理解，但对于较为复杂的FSM就不适用了。
 

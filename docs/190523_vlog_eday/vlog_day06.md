@@ -71,4 +71,4 @@ module button_jitter(
 endmodule
 ```
 仿真波形图如下：
-<center><img src="image/day06/result.jpg"></center>
+<center><img src="image/06_result.jpg"></center>

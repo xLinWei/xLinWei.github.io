@@ -8,7 +8,7 @@ by [WeiLin](https://github.com/xLinWei)
 
 时钟分频分为：偶数分频、奇数分频
 ### 1.偶数分频
-<center><img src="image/day11/clk2.png" width="30%"></center>
+<center><img src="image/11_clk2.png" width="30%"></center>
 二分频用一个触发器即可实现：
 
 ```verilog
@@ -53,12 +53,12 @@ module clk_even #(parameter N=4)(
 
 endmodule
 ```
-<center><img src="image/day11/result1.png" width="80%"></center>
+<center><img src="image/11_result1.png" width="80%"></center>
 
 ### 2.奇数分频
 奇数分频需要在上升沿和下降沿分别计数，然后"错位相或"或者"错位异或"即可，所以可以分成以下两个方法(以5分频为例)：
 #### 方法1：错位相或
-<center><img src="image/day11/time1.png" width="30%"></center>
+<center><img src="image/11_time1.png" width="30%"></center>
 
 ```verilog
 module clk_odd1 #(parameter N=5)(
@@ -104,10 +104,10 @@ module clk_odd1 #(parameter N=5)(
 endmodule
 ```
 
-<center><img src="image/day11/result2.png" width="80%"></center>
+<center><img src="image/11_result2.png" width="80%"></center>
 
 #### 方法2：错位异或
-<center><img src="image/day11/time2.png" width="50%"></center>
+<center><img src="image/11_time2.png" width="50%"></center>
 
 ```verilog
 module clk_odd2 #(parameter N=5)(
@@ -151,6 +151,6 @@ module clk_odd2 #(parameter N=5)(
 
 endmodule
 ```
-<center><img src="image/day11/result3.png" width="80%"></center>
+<center><img src="image/11_result3.png" width="80%"></center>
 
 

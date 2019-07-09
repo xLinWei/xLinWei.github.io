@@ -31,9 +31,9 @@ module sync_edge(
 endmodule
 ```
 其思想就是将信号用D触发器延时一个时钟，然后做判断即可，逻辑图如下。
-<center><img src="image/day03/sync_edge.png"></center>
+<center><img src="image/03_sync_edge.png"></center>
 其仿真结果如下：
-<center><img src="image/day03/wave.png"></center>
+<center><img src="image/03_wave.png"></center>
 
 ### 二、异步边沿检测
 异步信号需要考虑亚稳态的问题，所以需要做同步处理，一般使用两级触发器。
@@ -63,4 +63,4 @@ module nsync_edge(
 endmodule
 ```
 异步上升沿检测逻辑图如下图所示，只需在同步逻辑前加两级触发器即可。
-<center><img src="image/day03/nsync_edge.png" width="70%"></center>
+<center><img src="image/03_nsync_edge.png" width="70%"></center>

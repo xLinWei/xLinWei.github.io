@@ -27,7 +27,7 @@ end
 这里重点介绍异步复位同步释放。异步复位会有问题，即复位结束时刻(释放时刻)恰在亚稳态窗口内时，无法决定现在的复位状态是1还是0，会导致亚稳态。之所以需要异步复位、同步释放是因为异步rst信号置位是不需要clk采样，而rst释放时是需要clk采样的，所以释放需要同步。
 
 分两种情况，一个是低电平复位，一个是高电平复位：
-<center><img src="image/day12/rst_n.png" width="50%"></center>
+<center><img src="image/12_rst_n.png" width="50%"></center>
 
 ```verilog
 module reset1(
@@ -45,7 +45,7 @@ module reset1(
     end
 endmodule
 ```
-<center><img src="image/day12/rst.png" width="50%"></center>
+<center><img src="image/12_rst.png" width="50%"></center>
 
 ```verilog
 module reset1(
