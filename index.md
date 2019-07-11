@@ -9,3 +9,4 @@ layout: home
 [> vlog_eday](./docs/190523_vlog_eday/index.html)  
 [> 浪潮之间](./docs/190611_top_of_wave.html)  
 [> 关于RISC-V](./docs/190630_about_riscv.html)  
+[> VideoPath](./docs/190710_VideoPath.html)  
