@@ -13,7 +13,7 @@ RISC-V提供专门的Load、Store指令访问存储器，其它的普通指令�
 
 **RISC-V只支持小端格式(Little-Endian)**，即数据在memory中存放格式为：高字节放高地址，低字节放低地址。
 
-### fence/fence.i指令
+### #fence/fence.i指令
 
 RV32I还提供用于屏障“数据”存储器访问(或设备IO访问)顺序的**fence指令**：“The FENCE instruction is used to order device I/O and memory accesses as viewed by other RISCV harts and external devices or coprocessors.”
 
@@ -25,7 +25,7 @@ RISC-V ISA支持多个并发线程在共享地址空间下执行，每个**硬�
 
 fence.i 指令用于同步指令和数据流。对于同一个硬件线程，RISC-V不保证用存储指令写到内存指令区的数据可以被取指令取到。这是因为处理器采用流水线具有一定深度，当写存储器指令完成了写操作时，后续的指令可能已完成了取指令的取操作。所以需要使用fence.i同步，注意**fence.i只能保证同一个hart执行的指令和数据流顺序**。
 
-### 存储器模型
+### #存储器模型
 
 存储器模型(Memory Model)，又称储存器一致性模型，是提前约定好的存储器访问需要遵循的规则。上面的松散模型(Relaxed Memory Model)就是一种。
 

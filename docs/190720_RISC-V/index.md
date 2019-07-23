@@ -10,7 +10,7 @@ by WeiLin, 2019.7.18
 
 后来了解了RISC-V，一种开源的ISA，进而知道了有很多基于RISC-V的开源处理器，所以开始自学RISC-V。
 
-这里对RISC-V进行简单概括，大多是自己的整理和归纳，主要参考两本书：“The RISC-V Reader:An Open Architecture Atlas”和“手把手教你设计CPU——RISC-V处理器”。前一本是David Patterson与Andrew Waterman编写的RISC-V手册，有中文翻译版。而后一本是介绍开源蜂鸟E203 RISC-V处理器核。
+这里对RISC-V进行简单概括，大多是自己的整理和归纳，主要参考两本书：“The RISC-V Reader:An Open Architecture Atlas”和“手把手教你设计CPU——RISC-V处理器”。前一本是David Patterson与Andrew Waterman编写的RISC-V手册，有中文翻译版,而后一本是介绍开源蜂鸟E203 RISC-V处理器核。
 
 ### Content
 
