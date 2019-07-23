@@ -37,7 +37,7 @@ cout = (a & b) | (a & cin) | (b & cin);
 ```
 设MUX(in0,in1,sel,out),则：
 out=x&y <=> MUX(0,y,x,out)
-out=x|y <=> MUX(y,x,1,out)
+out=x|y <=> MUX(y,1,x,out)
 out=!x <=> MUX(1,0,x,out)
 ```
 而异或`z=xy'+x'y`可以表示如下,然后据此就可以构建全加器了。
