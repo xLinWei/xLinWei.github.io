@@ -28,3 +28,6 @@ by WeiLin, 2019.7.18
 
 [5. RV32I:分支指令](./risc05.html)
 ：条件跳转/条件码/延时槽/无条件跳转/函数调用
+
+[6. RV32A:原子指令](./risc06.html)
+：原子操作/AMO/LR/SC/Acquire-Release
