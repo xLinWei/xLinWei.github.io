@@ -31,3 +31,6 @@ by WeiLin, 2019.7.18
 
 [6. RV32A:原子指令](./risc06.html)
 ：原子操作/AMO/LR/SC/Acquire-Release
+
+[7. RV32V:向量](./risc07.html)
+：数据并行/SIMD/向量
