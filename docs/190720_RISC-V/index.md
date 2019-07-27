@@ -6,11 +6,11 @@ tags: risc-v
 # RISC-V
 by WeiLin, 2019.7.18
 
-之前上过一门课:“Nand2Tetris:从与非门到俄罗斯方块”，这门课是用一种简化的HDL语言设计一种非常简单的计算机(HACK Computer)，所以很好奇真正的计算机或者说处理器是怎么设计的。
+之前上过一门课:“Nand2Tetris:从与非门到俄罗斯方块”，是用一种简化的HDL语言设计一种非常简单的计算机(HACK Computer)，所以很好奇真正的计算机或者说处理器是怎么设计的。
 
-后来了解了RISC-V，一种开源的ISA，进而知道了有很多基于RISC-V的开源处理器，所以开始自学RISC-V。
+后来了解了RISC-V，一种开源的ISA，进而知道了有很多基于RISC-V的开源处理器，所以开始对RISC-V产生兴趣。
 
-这里对RISC-V进行简单概括，大多是自己的整理和归纳，主要参考两本书：“The RISC-V Reader:An Open Architecture Atlas”和“手把手教你设计CPU——RISC-V处理器”。前一本是David Patterson与Andrew Waterman编写的RISC-V手册，有中文翻译版，而后一本是介绍开源蜂鸟E203 RISC-V处理器核。
+这里对RISC-V进行简单概括，大多是自己的整理和归纳，主要参考两本书：“The RISC-V Reader:An Open Architecture Atlas”和“手把手教你设计CPU——RISC-V处理器”。前一本是David Patterson与Andrew Waterman编写的RISC-V手册，有中文翻译版，而后一本是介绍开源蜂鸟E203 RISC-V处理器核。另外还有Hennessy和Patterson的经典著作——《计算机体系结构-量化研究方法》。
 
 ### Content
 
