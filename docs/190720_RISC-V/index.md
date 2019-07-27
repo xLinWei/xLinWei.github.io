@@ -30,7 +30,7 @@ by WeiLin, 2019.7.18
 ：条件跳转/条件码/延时槽/无条件跳转/函数调用
 
 [6. RV32A:原子指令](./risc06.html)
-：原子操作/AMO/LR/SC/Acquire-Release
+：原子操作/AMO/加载保留-条件存储/Acquire-Release
 
 [7. RV32V:向量](./risc07.html)
 ：数据并行/SIMD/向量
