@@ -6,7 +6,7 @@ tags: Video Scaler
 # VideoScaler
 by WeiLin, 2019.8.10
 
-第三届全国大学生集成电路创新创业大赛“紫光同创杯”的杯赛题目是：“基于PGL22的视频缩放算法实现”。事实上，在Xilinx FPGA中可以直接使用**Video Processing Subsystem IP(VPSS)** 的 **Scaler Only Mode** 实现视频缩放。但是如何自己设计Scaler IP呢？这里根据VPSS的使用谈谈自己的想法。
+第三届全国大学生集成电路创新创业大赛中有一个赛题是：“基于PGL22的视频缩放算法实现”。事实上，在Xilinx FPGA中可以直接使用**Video Processing Subsystem IP(VPSS)** 的 **Scaler Only Mode** 实现视频缩放。但是如何自己设计Scaler IP呢？这里根据VPSS的使用谈谈自己的想法。
 
 ### 1. VPSS IP
 
@@ -28,7 +28,7 @@ GPIO Reset用于软复位，Vertical Scaler实现纵向缩放，Horizontal Scale
 
 <center><img src="image/190810_formula.jpg" width="65%"></center>
 
-其中，I1，I2，I3，I4分别为左上、右上、左下、右下像素。由上述公式可以看出双线性插值是可以拆分成纵向插值和横向插值，如下图所示：
+其中，I1，I2，I3，I4分别为左上、右上、左下、右下像素。双线性插值是可以拆分成纵向插值和横向插值，如下图所示：
 
 <center><img src="image/190810_Bilinear1.jpg" width="50%"></center>
 
@@ -38,7 +38,7 @@ GPIO Reset用于软复位，Vertical Scaler实现纵向缩放，Horizontal Scale
 
 ### 3. 相位(Phase)
 
-相位反映的是映射点与周围像素点的相对位置。比如对于下图横向缩放，输入6个像素，输出5个橡树。从图中可以看到存在4中相对位置关系，5个输出像素的相位分别为0，1，2，3，0。(该图根据Xilinx文档“Video Processing Subsystem v2.1”图3-5修改所画。)
+相位反映的是映射点与周围像素点的相对位置。比如对于下图横向缩放，输入6个像素，输出5个像素。从图中可以看到存在4中相对位置关系，5个输出像素的相位分别为0，1，2，3，0。(该图根据Xilinx文档“Video Processing Subsystem v2.1”图3-5修改。)
 
 <center><img src="image/190810_phase.jpg" width="80%"></center>
 
@@ -46,8 +46,8 @@ VPSS里Polyphase有64个相位，对于HTaps=6，就有64*6个相位系数。一
 
 那么在verilog里如何计算相位？依然以上图横向缩放为例。首先计算缩放比ratio=6/5=1.2，那么pixel_out[n]的映射坐标为n*ratio(n=0~4)。
 
-将n*ratio放大2^16进行定点化，那么低16位表示小数部分，小数部分的高6为即为相位(假设有64个相位)。
+将n*ratio放大2^16进行定点化，那么低16位表示小数部分，小数部分的高6位即为相位(假设有64个相位)。
 
 ### 4. 实现(Implementation)
 
-Scaler原理还是相对简单的，但具体实现就需要考虑很多细节，这里只是给出自己的想法。比如相位是否能够实时计算，如果不能的话就需要提供一个相位表(事实上，VPSS就是这么做的，将相位提前计算好然后存入寄存器中)。还有就是边界问题(映射点在边界附近)、行缓存问题等。还有就是，由于输入像素并不是以固定的速度输入的，所以接口需采用AXI-Stream进行握手。总之，用Verilog实现VideoScaler IP还是相当麻烦的。
+Scaler原理还是相对简单的，但具体实现就需要考虑很多细节。比如相位是否能够实时计算，如果不能的话就需要提供一个相位表(事实上，VPSS就是这么做的，将相位提前计算好然后存入寄存器中)。还有就是边界问题(映射点在边界附近)、行缓存问题等。还有就是，由于输入像素并不是以固定的速度输入的，所以接口需采用AXI-Stream进行握手。总之，用Verilog实现VideoScaler IP还是相当麻烦的，这里只是给出自己的想法。
