@@ -38,7 +38,7 @@ GPIO Reset用于软复位，Vertical Scaler实现纵向缩放，Horizontal Scale
 
 ### 3. 相位(Phase)
 
-相位反映的是映射点与周围像素点的相对位置。比如对于下图横向缩放，输入6个像素，输出5个像素。从图中可以看到存在4中相对位置关系，5个输出像素的相位分别为0，1，2，3，0。(该图根据Xilinx文档“Video Processing Subsystem v2.1”图3-5修改。)
+相位反映的是映射点与周围像素点的相对位置。比如对于下图横向缩放，输入6个像素，输出5个像素。从图中可以看到存在5种相对位置关系，5个输出像素的相位分别为0，1，2，3，4。(该图根据Xilinx文档“Video Processing Subsystem v2.1”图3-5修改。)
 
 <center><img src="image/190810_phase.jpg" width="80%"></center>
 

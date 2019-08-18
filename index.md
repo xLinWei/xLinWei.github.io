@@ -12,3 +12,4 @@ layout: home
 [> 关于RISC-V](./docs/190630_about_riscv.html)  
 [> RISC-V](./docs/190720_RISC-V/index.html)  
 [> VideoScaler](./docs/190810_VideoScaler.html)  
+[> 数字IC: STA](./docs/190816_IC_STA.html)  
