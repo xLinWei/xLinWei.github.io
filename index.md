@@ -13,3 +13,4 @@ layout: home
 [> RISC-V](./docs/190720_RISC-V/index.html)  
 [> VideoScaler](./docs/190810_VideoScaler.html)  
 [> 数字IC: STA](./docs/190816_IC_STA.html)  
+[> 数字IC: FSM](./docs/191015_IC_FSM.html)  
