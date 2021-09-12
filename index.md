@@ -14,3 +14,4 @@ layout: home
 [> VideoScaler](./docs/190810_VideoScaler.html)  
 [> 数字IC: STA](./docs/190816_IC_STA.html)  
 [> 数字IC: FSM](./docs/191015_IC_FSM.html)  
+[> 数字IC: GRAY](./docs/210906_IC_GRAY.html)  
