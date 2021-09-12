@@ -3,7 +3,8 @@ layout: home
 ---
 
 [> About me](./docs/190519_About_me.html)  
-[> Blog建立](./docs/190519_Build_The_Blog.html)  
+[> Blog建立](./docs/190519_Build_The_Blog.html)   
+[> 钓鱼。。。](./docs/190519_fish.html)   
 [> 计算机组成](./docs/190520_computer_composition.html)  
 [> 与非门到俄罗斯方块](./docs/190520_Nand2Tetris.html)  
 [> vlog_eday](./docs/190523_vlog_eday/index.html)  
